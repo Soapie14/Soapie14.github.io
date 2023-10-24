@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background-color: rgb(30, 30, 30);
     height: 5rem;
     width: 100vw;
@@ -62,4 +62,144 @@
     color: aqua;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid aqua;
+} */
+
+
+
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    z-index: 100;
+    /* Ensure it's above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Desktop menu items */
+.desktopMenu {
+    display: flex;
+    align-items: center;
+}
+
+.desktopMenuListItem {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Desktop "Contact Me" button */
+.desktopMenuBtn {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    /* Remove the orange background */
+    font-size: 16px;
+}
+
+.desktopMenuImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Burger menu icon */
+.burgerMenu {
+    display: none;
+    /* Initially hidden on desktop */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Mobile menu */
+.mobileMenu {
+    display: none;
+    /* Initially hidden on mobile */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 1;
+}
+
+/* ... (previous CSS rules) */
+/* ... (previous CSS rules) */
+
+/* "Contact Me" button */
+.contactBtn {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the contact image inside the button */
+.contactImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Style the text inside the button */
+.contactText {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* ... (media queries and other styles) */
+
+
+
+
+/* Mobile menu rows */
+.mobileMenuRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.ListItem {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    /* Mobile menu icon visible */
+    .burgerMenu {
+        display: block;
+    }
+
+    /* Desktop menu hidden on mobile */
+    .desktopMenu {
+        display: none;
+    }
+
+    /* Mobile menu visible */
+    .mobileMenu {
+        display: flex;
+    }
 }

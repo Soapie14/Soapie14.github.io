@@ -1,4 +1,4 @@
-
+/* 
 #intro{
     height: calc(100vh - 4rem);
     width: 100vw;
@@ -81,4 +81,132 @@
         font-size: 4.5vw;
     }
     
+}  */
+
+/* Base styles for both mobile and desktop */
+
+.responsiveIntro {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(30, 30, 30);
+    /* Gray background */
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.introContent {
+    background-color: rgba(30, 30, 30);
+    border-radius: 8px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header and Paragraph */
+
+.introHello {
+    font-size: 24px;
+    color: aqua;
+}
+
+.introIam {
+    font-size: 24px;
+}
+
+.introName {
+    font-size: 24px;
+    color: aqua;
+}
+
+.introPara {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Hire Me button section */
+
+.btn {
+    background-color: rgb(200, 200, 200);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #454545;
+}
+
+/* Center the button under the text */
+.btn {
+    margin-top: 20px;
+}
+
+
+/* Media query for screens with a maximum width of 768px (mobile) */
+@media (max-width: 768px) {
+    .introContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .introName {
+        font-size: 28px;
+    }
+
+    .introPara {
+        font-size: 16px;
+    }
+
+    .introImage {
+        order: -1;
+        /* Places the image on top for mobile */
+        margin-top: 20px;
+    }
+
+    .bg {
+        opacity: 0.6;
+        /* Make the image opaque on mobile */
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (desktop) */
+/* Media query for screens with a maximum width of 768px (mobile) */
+@media (max-width: 768px) {
+    .introContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .introName {
+        font-size: 28px;
+    }
+
+    .introPara {
+        font-size: 16px;
+    }
+
+    .introImage {
+        order: 1; /* Change the order to place the image below content */
+        margin-top: 20px;
+    }
+
+    .bg {
+        opacity: 0.6;
+        /* Make the image opaque on mobile */
+    }
 }
