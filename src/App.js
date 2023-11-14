@@ -4,6 +4,8 @@ import Work from "./components/Portfolio/works.jsx";
 import Contact from "./components/Contact/contact.jsx";
 import Footer from "./components/Footer/footer.jsx";
 import ResponsiveIntro from "./components/Intro/intro.js";
+import ContactForm from "./components/ContactForm/ContactForm.jsx";
+import Test from "./components/Test/Test.jsx"
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Skills/>
       <Work/>
       <Contact/>
+      <ContactForm/>
       <Footer/>
+      <Test/>
     </div>
   );
 }

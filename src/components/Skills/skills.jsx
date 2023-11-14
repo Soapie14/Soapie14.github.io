@@ -1,47 +1,5 @@
 //rafce
 
-// import React from 'react';
-// import './skills.css';
-// import UXUI from "./uxui.png";
-// import WebDesign from "./design.png";
-// import Coding from "./coding.png";
-
-// const Skills = () => {
-//     return (
-//         <section id='skills'>
-//             <span className="skillTitle">
-//                 What I Do
-//             </span>
-//             <span className="skillDesc">I'm a dedicated web developer, specializing in front-end technologies like React.js, HTML, and CSS. I also work with back-end tech like Python and Flask for full-stack applications. I'm experienced in database management with SQL/MySQL and MongoDB, ensuring data integrity. I'm committed to staying current, constantly learning and embracing new tools for cutting-edge web development.</span>
-//             <div className="skillBars">
-//                 <div className="skillBar">
-//                     <img src={Coding} alt="coding" className="skillBarImg" />
-//                     <div className="skillBarText">
-//                         <h2>Front-End Development</h2>
-//                         <p>I excel in crafting responsive, interactive web experiences using HTML, CSS, and JavaScript, leveraging frameworks like React, and adhering to accessibility and performance best practices.</p>
-//                     </div>
-//                 </div>
-//                 <div className="skillBar">
-//                     <img src= {UXUI} alt="UXUI" className="skillBarImg" />
-//                     <div className="skillBarText">
-//                         <h2>UI/UX Design</h2>
-//                         <p>Expertise in industry-standard design tools such as Figma, Sketch, or similar.</p>
-//                     </div>
-//                 </div>
-//                 <div className="skillBar">
-//                     <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
-//                     <div className="skillBarText">
-//                         <h2>Website Design</h2>
-//                         <p>This is a paragraph about website design!</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
-// export default Skills
-
 import React from 'react';
 import './skills.css';
 import UXUI from "./uxui.png";
@@ -71,7 +29,7 @@ const Skills = () => {
         <section id='skills'>
             <span className="skillTitle">What I Do</span>
             <span className="skillDesc">
-                I'm a dedicated web developer, specializing in front-end technologies like React.js, HTML, and CSS. I also work with back-end tech like Python and Flask for full-stack applications. I'm experienced in database management with SQL/MySQL and MongoDB, ensuring data integrity. I'm committed to staying current, constantly learning and embracing new tools for cutting-edge web development.
+                I'm a dedicated web developer, specializing in front-end technologies like React.js, HTML, and CSS. I also work with back-end Node.js, Python and Flask for full-stack applications. I'm experienced in database management with SQL/MySQL and MongoDB, ensuring data integrity. I'm committed to staying current, constantly learning and embracing new tools for cutting-edge web development.
             </span>
             <div className="skillBars">
                 {skillsData.map((skill, index) => (
@@ -89,3 +47,4 @@ const Skills = () => {
 }
 
 export default Skills;
+

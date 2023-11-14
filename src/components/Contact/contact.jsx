@@ -20,10 +20,8 @@ const Contact = () => {
                     <img src={Github} alt="github" className="link" />
                 </div>
             </form>
-
-
-
         </div>
+        
     )
 }
 
